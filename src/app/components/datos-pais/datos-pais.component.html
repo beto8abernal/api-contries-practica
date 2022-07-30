@@ -1,0 +1,18 @@
+<mat-card class="example-card card" *ngIf="resultadoPais !== undefined">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{ resultadoPais.flag}}&nbsp;{{ resultadoPais.name.common}}</mat-card-title>
+        <mat-card-subtitle class="card-subtitle ">{{resultadoPais.name.official}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="resultadoPais.coatOfArms.png" [alt]="resultadoPais.name.official">
+    <mat-card-content>
+        <p *ngIf="resultadoPais.capital !== undefined">Ciudad:&nbsp;{{ resultadoPais.capital[0]}}</p>
+        <p>Region:&nbsp;{{resultadoPais.region}}&nbsp;({{resultadoPais.subregion}})</p>
+        <p>Population:&nbsp;{{ resultadoPais.population}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <mat-chip-list aria-label="Fish selection">
+            <mat-chip color="primary" *ngFor="let border of resultadoPais.borders">{{ border}}</mat-chip>
+        </mat-chip-list>
+    </mat-card-actions>
+</mat-card>

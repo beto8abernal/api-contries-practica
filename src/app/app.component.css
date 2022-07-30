@@ -1,0 +1,28 @@
+.encabezado {
+    margin: 5px;
+}
+
+.principal {
+    margin: 5px;
+}
+
+.cabecera-spacer {
+    flex: 1 1 auto;
+}
+
+.btn-button-row {
+    display: table-cell;
+    width: 490px;
+}
+
+.divider {
+    margin-top: 10px;
+}
+
+.btnBuscar {
+    margin-left: 5px;
+}
+
+.contenedor {
+    margin: 10px;
+}

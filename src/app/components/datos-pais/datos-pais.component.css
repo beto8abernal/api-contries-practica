@@ -1,0 +1,14 @@
+.card {
+    width: 250px;
+    height: 100%;
+    color: black;
+    margin: 15px;
+}
+
+.card-subtitle {
+    color: black;
+}
+
+mat-card {
+    display: inline-block;
+}
